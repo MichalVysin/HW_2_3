@@ -31,7 +31,7 @@ public class Main {
         countAverageFromFiles(files);
 
         //4)
-        countAllNumbersBetweenAAndBByTheirOwnValue(1,7);
+        countAllNumbersBetweenAAndBByTheirOwnValue(1, 7);
     }
 
     public static void countUpperCase(String[] text) {
@@ -53,8 +53,8 @@ public class Main {
 
         try (
                 BufferedReader bufferedReader =
-                     new BufferedReader(
-                             new FileReader(file))) {
+                        new BufferedReader(
+                                new FileReader(file))) {
 
             String readLine;
             while ((readLine = bufferedReader.readLine()) != null) {
@@ -91,9 +91,9 @@ public class Main {
                                         new BufferedReader(
                                                 new FileReader(file)))) {
 
-                    while (scanner.hasNextDouble()) {
+                    while (scanner.hasNext()) {
 
-                        inputStreamList.add(scanner.nextDouble());
+                        inputStreamList.add(Double.parseDouble(scanner.next()));
 
                         Stream<Double> inputStream = inputStreamList.stream();
 
